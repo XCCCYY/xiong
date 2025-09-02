@@ -1,0 +1,27 @@
+.turnOffTheScreen {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    transform-style: preserve-3d;
+
+    .hidden {
+        display: none;
+    }
+
+    video {
+        width: 100%;
+        min-width: 1620px;
+        display: block;
+    }
+}
+
+/* 在息屏模式下隐藏滚动条 */
+.screensaver-mode::-webkit-scrollbar {
+    display: none;
+}
+
+.screensaver-mode {
+    -ms-overflow-style: none;
+    /* scrollbar-width: none; */
+    overflow: auto;
+}

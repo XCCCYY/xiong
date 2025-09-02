@@ -1,0 +1,4 @@
+*.webm filter=lfs diff=lfs merge=lfs -text
+3D浏览长廊/full_screen_videos/302.webm filter=lfs diff=lfs merge=lfs -text
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.h5 filter=lfs diff=lfs merge=lfs -text

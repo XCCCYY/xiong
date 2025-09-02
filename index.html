@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./048b0eaebdba883f6d065b5eb06a90fe_5374427270197151792_64x64.ico">
+    <title>个人网站</title>
+    <script src="./jquery-3.6.4.js"></script>
+    <!-- 主页样式 -->
+    <link rel="stylesheet" href="./secondDimension/homePage/homePageCss/homePage.css">
+    <!-- 开场动画 -->
+    <link rel="stylesheet" href="./secondDimension/homePage/homePageCss/openingAnimation.css">
+    <!-- 息屏样式 -->
+    <link rel="stylesheet" href="./secondDimension/turnOffTheScreen/turnOffTheScreen.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./secondDimension/turnOffTheScreen/style.css">
+</head>
+
+<body>
+    <!-- 开场动画 -->
+    <!-- <div class="opening-animation">
+        <div class="aniplex">
+            <div class="chars">A</div>
+            <div class="chars">N</div>
+            <div class="chars">I</div>
+            <div class="chars">P</div>
+            <div class="chars">L</div>
+            <div class="chars">E</div>
+            <div class="chars">X</div>
+            <div class="rect a"></div>
+            <div class="rect n"></div>
+            <div class="rect i"></div>
+            <div class="rect p"></div>
+            <div class="rect l"></div>
+            <div class="rect e"></div>
+            <div class="rect x"></div>
+            <div class="rect-edge"></div>
+        </div>
+    </div> -->
+
+    <!-- 息屏 -->
+    <div class="turnOffTheScreen">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <div style="position:absolute;left:-378px; top:696px;" class="time" id="time" data-hours=""
+                    data-minutes="">
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                    <div class="digit">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <canvas id="demo-canvas" style="position:absolute;left: -786px;top: 400px;"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/rxjs@7/bundles/rxjs.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./secondDimension/turnOffTheScreen/Rx.min.js"></script>
+    <script src="./secondDimension/turnOffTheScreen/rxcss.min.js"></script>
+    <script src="./secondDimension/turnOffTheScreen/turnOffTheScreen.js"></script>
+    <script src="./secondDimension/turnOffTheScreen/index.js"></script>
+    
+    <div id="app">
+        <!-- 背景视频 -->
+        <div class="mp" style="height: 0px;">
+            <video class="mp4" autoplay loop x-webkit-airplay webkit-playsinline muted width="1920">
+                <source src="./secondDimension/homePage/mp4/雪狐壁纸分层_2_1(2).mp4" type="video/mp4">
+            </video>
+            <canvas id="overlayCanvas" width="0" height="0"></canvas>
+        </div>
+        <!-- home -->
+        <div class="home">
+            <!-- 头部 -->
+            <div class="home-top">
+                <!-- 头像 -->
+                <div class="avatar">
+                    <div class="avatar-img">
+                        <img src="./secondDimension/homePage/img/avatar/20221203133451_c676c.thumb.400_0.jpeg" alt="">
+                    </div>
+                </div>
+                <button class="switch-btn">切换头像</button>
+                
+                <!-- 搜索框 -->
+                <div class="search">
+                    <div class="input">
+                        <input type="text" id="searchInput" autocomplete="off" placeholder="请输入跳转页面关键字...">
+                    </div>
+                    <button id="searchBtn">搜索</button>
+                    <ul id="results"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./secondDimension/homePage/homePageJs/avatars-data.js"></script>
+    <script type="module" src="./secondDimension/homePage/homePageJs/homePage.js"></script>
+</body>
+
+</html>
